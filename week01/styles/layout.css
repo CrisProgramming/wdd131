@@ -1,0 +1,63 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout styling */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: #444;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    flex-grow: 1;
+    min-height: 400px;
+    
+}
+
+.main-content {
+    flex: 3;
+    background-color: #d3d3d3;
+    padding: 20px;
+}
+
+.aside-content {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+}
+
+.footer {
+    margin-top: auto;
+}
