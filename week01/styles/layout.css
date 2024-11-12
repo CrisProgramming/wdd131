@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -24,8 +23,7 @@ body {
 .nav {
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .nav a {
