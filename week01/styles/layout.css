@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +8,9 @@
 /* Layout styling */
 body {
     font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .header,
@@ -23,7 +24,7 @@ body {
 .nav {
     background-color: black;
     display: flex;
-    /* Use Flexbox for navigation */
+    /* Flexbox for navigation */
     justify-content: center;
 }
 
@@ -40,8 +41,7 @@ body {
 
 .container {
     display: flex;
-    /* Use Flexbox for main layout */
-    flex-grow: 1;
+    /* Flexbox for main content layout */
     gap: 20px;
     padding: 20px;
     background-color: #f5f5f5;
@@ -49,18 +49,19 @@ body {
 
 .main-content {
     flex: 3;
+    /* Flex size to control width */
     background-color: #d3d3d3;
     padding: 20px;
 }
 
 .aside-content {
     flex: 1;
+    /* Flex size to control width */
     background-color: white;
     padding: 20px;
 }
 
 .footer {
-    margin-top: auto;
     background-color: #333;
     color: white;
     text-align: center;
