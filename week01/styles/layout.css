@@ -8,9 +8,9 @@
 /* Layout styling */
 body {
     font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .header,
@@ -23,7 +23,8 @@ body {
 
 .nav {
     background-color: black;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
 }
 
@@ -31,7 +32,6 @@ body {
     color: white;
     padding: 15px 20px;
     text-decoration: none;
-    display: block;
 }
 
 .nav a:hover {
@@ -39,25 +39,26 @@ body {
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
     padding: 20px;
-    flex-grow: 1;
-    min-height: 400px;
-    
+    background-color: #f5f5f5;
 }
 
 .main-content {
-    flex: 3;
     background-color: #d3d3d3;
     padding: 20px;
 }
 
 .aside-content {
-    flex: 1;
     background-color: white;
     padding: 20px;
 }
 
 .footer {
-    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
