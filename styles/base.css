@@ -1,4 +1,6 @@
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400&display=swap');
+
 
 * {
     margin: 0;
@@ -6,13 +8,12 @@
     box-sizing: border-box;
 }
 
-
+/* Global styles */
 body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
     line-height: 1.6;
     background-color: #f4f4f9;
-    /* Light background color */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -27,6 +28,11 @@ h3 {
     color: #222;
 }
 
+.highlight {
+    color: #555;
+    /* Example highlight color */
+}
+
 /* Header and navigation */
 header {
     text-align: center;
@@ -37,7 +43,6 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* Space between links */
     background-color: #333;
     padding: 10px;
 }
@@ -49,7 +54,6 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-/* Hover Effect for Navigation Links */
 nav a:hover {
     background-color: #555;
     border-radius: 4px;
@@ -65,7 +69,7 @@ main {
     border-radius: 8px;
 }
 
-/* Card layout in main section */
+/* Card layout */
 .card {
     display: grid;
     grid-template-columns: 1fr;
@@ -77,11 +81,32 @@ main {
     margin-bottom: 20px;
 }
 
-/* Responsive grid for larger screens */
+/* Responsive grid layout */
 @media (min-width: 768px) {
     .card {
         grid-template-columns: 1fr 2fr;
     }
+}
+
+/* Resource section styling */
+aside#resources {
+    margin-top: 20px;
+}
+
+aside#resources ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside#resources ul li a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+aside#resources ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Footer styling */
@@ -92,7 +117,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Dynamic year and last modified section */
+/* Dynamic year and last modified */
 footer p {
     margin: 5px 0;
 }
