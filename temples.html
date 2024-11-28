@@ -1,0 +1,48 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples album</title>
+    <!-- Link to CSS files in the proper order for mobile-first development -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- Deferred script -->
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temples album</h1>
+        <button id="hamburger" aria-label="Menu">☰</button> 
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples</h2>
+        <div class="grid-container">
+            <figure>
+                <img src="path/to/image1.jpg" alt="Temple 1">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure>
+                <img src="path/to/image2.jpg" alt="Temple 2">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <!-- Add more figures -->
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="year"></span> Cristobal Olguin, Chile</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
