@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago, Chile</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <script src="scripts/windchill.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Santiago, Chile</h1>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1200px)">
+            <img src="images/hero-large.webp" alt="View of Santiago">
+        </picture>
+    </header>
+
+    <main>
+        <section id="weather">
+            <h2>Weather ⛅</h2>
+            <p>Temperature: <span id="temperature">15°C</span></p>
+            <p>Wind Speed: <span id="wind-speed">10 km/h</span></p>
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Santiago, Chile</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>

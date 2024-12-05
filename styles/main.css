@@ -1,0 +1,62 @@
+/* Global css variables */
+:root {
+    --primary-color: #0039a6; /* Chilean flag blue */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #d52b1e; /* Chilean flag red */
+    --font-family: 'Arial, sans-serif';
+    --max-width: 1200px;
+    --padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    max-width: var(--max-width);
+}
+
+main {
+    padding: var(--padding);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+section#weather {
+    background-color: #f0f0f0;
+    padding: var(--padding);
+    border-radius: 8px;
+    margin-bottom: var(--padding);
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

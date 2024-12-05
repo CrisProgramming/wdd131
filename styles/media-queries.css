@@ -1,0 +1,43 @@
+/* Media queries for responsiveness */
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    body {
+        padding: 10px;
+    }
+
+    header, main, footer {
+        padding: 15px;
+    }
+
+    section#weather {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1201px) {
+    body {
+        padding: 20px;
+    }
+
+    header, main, footer {
+        padding: 20px;
+    }
+
+    section#weather {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Pseudo-element for weather Icon */
+    section#weather h2::after {
+        content: url('../images/weather-icon.svg');
+        display: inline-block;
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+    }
+}
