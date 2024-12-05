@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the vibrant city of Santiago, Chile, its weather, and culture.">
+    <meta name="author" content="Cristobal Olguin">
     <title>Santiago, Chile</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/media-queries.css">
+    <!-- External JavaScript -->
     <script src="scripts/windchill.js" defer></script>
 </head>
 
@@ -16,7 +24,7 @@
         <picture>
             <source srcset="images/hero-small.webp" media="(max-width: 600px)">
             <source srcset="images/hero-medium.webp" media="(max-width: 1200px)">
-            <img src="images/hero-large.webp" alt="View of Santiago">
+            <img src="images/hero-large.webp" alt="A scenic view of Santiago, Chile" loading="lazy">
         </picture>
     </header>
 
@@ -27,13 +35,18 @@
             <p>Wind Speed: <span id="wind-speed">10 km/h</span></p>
             <p>Wind Chill: <span id="wind-chill">N/A</span></p>
         </section>
-
     </main>
 
     <footer>
         <p>&copy; <span id="current-year"></span> Santiago, Chile</p>
         <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
+
+    <script>
+        // Adding dynamic current year and last modified date functionality
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
 </body>
 
 </html>
