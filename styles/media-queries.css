@@ -1,6 +1,6 @@
 /* Media queries for responsiveness */
 
-
+/* Tablets and Small Desktops */
 @media (min-width: 601px) and (max-width: 1200px) {
     body {
         padding: 10px;
@@ -33,7 +33,7 @@
 
     /* Pseudo-element for weather Icon */
     section#weather h2::after {
-        content: url('../images/weather-icon.svg');
+        content: url(../images/weather_icon.svg);
         display: inline-block;
         margin-left: 10px;
         width: 24px;
