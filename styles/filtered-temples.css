@@ -1,5 +1,6 @@
+/* General reset */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -12,10 +13,43 @@ header {
     padding: 10px 0;
 }
 
-nav button {
-    margin: 5px;
-    padding: 10px;
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Add hover effect */
+nav a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+button#hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
     cursor: pointer;
+    display: none; /* Hide initially */
 }
 
 main {
@@ -37,7 +71,7 @@ main {
 .card img {
     width: 100%;
     height: auto;
-    lazy: loading;
+    loading: lazy; /* Lazy loading is done in the HTML */
 }
 
 .card h2 {
@@ -48,4 +82,15 @@ main {
 .card p {
     margin: 5px 0;
     color: #666;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
 }

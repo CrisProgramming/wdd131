@@ -7,20 +7,21 @@
     <meta name="description" content="My 9 favorite temples of the world.">
     <meta name="author" content="Cristobal Olguin">
     <title>Temples Album</title>
-    <!-- Link to CSS files in the proper order for mobile-first development -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
-    <!-- Deferred script -->
+    <!-- Deferred javascript -->
     <script src="scripts/filtered-temples.js" defer></script>
     <script src="scripts/filtered-getdates.js" defer></script>
 </head>
-
 
 <body>
     <header>
         <h1>Temples Album</h1>
         <button id="hamburger" aria-label="Menu">☰</button>
-        <nav>
+        <nav id="menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#old">Old</a></li>
@@ -31,12 +32,10 @@
         </nav>
     </header>
 
-   
-         <!-- Main section for dynamic cards -->
-    <main id="temple-container"></main>
-
-    <script src="filtered-temples.js"></script>
-
+    <!-- Main section for dynamic cards -->
+    <main id="temple-container">
+        <h2>Temples Around the World</h2>
+        <!-- Temple cards will be dynamically generated here -->
     </main>
 
     <footer>
