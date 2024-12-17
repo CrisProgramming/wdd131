@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My 9 favorite temples of the world.">
+    <meta name="author" content="Cristobal Olguin">
+    <title>Temples Album</title>
+    <!-- Link to CSS files in the proper order for mobile-first development -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <!-- Deferred script -->
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/filtered-getdates.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <h1>Temples Album</h1>
+        <button id="hamburger" aria-label="Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+         <!-- Main section for dynamic cards -->
+    <main id="temple-container"></main>
+
+    <script src="filtered-temples.js"></script>
+
+    </main>
+
+    <footer>
+        <p>©<span id="year"></span> Cristobal Olguin, Chile</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

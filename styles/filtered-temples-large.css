@@ -1,0 +1,32 @@
+/* Styles for screens larger than 768px */
+@media (min-width: 768px) {
+    #hamburger {
+        display: none; /* Hide hamburger button */
+    }
+
+    nav {
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        display: flex; /* Show navigation horizontally */
+        position: static;
+        flex-direction: row;
+        gap: 15px;
+        background: none;
+        box-shadow: none;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
