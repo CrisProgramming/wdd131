@@ -71,8 +71,8 @@ main {
 .card img {
     width: 100%;
     height: auto;
-    loading: lazy; /* Lazy loading is done in the HTML */
 }
+
 
 .card h2 {
     margin: 10px 0;
