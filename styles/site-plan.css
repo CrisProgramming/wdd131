@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6FA; /* Soft Lavender */
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ADD8E6; /* Light Blue */
+    color: #fff;
+  }
+  
+  h1, h2 {
+    font-family: 'Lora', serif;
+    color: #002244; /* Darker Blue for emphasis */
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #ADD8E6;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: #86B8DC;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ADD8E6;
+    color: white;
+  }
+  
