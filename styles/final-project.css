@@ -1,0 +1,79 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    /* Soft light gray for a calm background */
+    color: #444;
+    /* Subtle dark gray for text */
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #BFD8D2;
+    /* Soft teal */
+    color: #984444;
+    /* White for contrast */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #FFFFFF;
+    /* Pure white for content area */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Reduced shadow for simplicity */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #BFD8D2;
+    /* Matching soft teal */
+    color: #984444;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    /* Lighter border for inputs */
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #92B4A7;
+    /* Softer green-blue for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
